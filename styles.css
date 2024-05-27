@@ -1,0 +1,265 @@
+:root{
+  --text: dee2ff;
+  --welcome: 003566;
+  --project: 778da9;
+  --nav-text: 003566;
+  --lavendar: #b8c0ff;
+}
+
+*{ box-sizing:border-box; 
+}
+body{
+  font-family: cursive, sans-serif;
+  padding: 0;
+  margin: 0;  
+  color: var(--text);
+    font-size: 1.4rem;
+     font-weight: 400;
+    line-height: 1.4;
+}
+#navbar{
+  background-color: var(--lavendar);
+  color: var(--nav-text);
+  display: flex;
+  flex-direction: row; 
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+li  {
+  display: inline;
+}
+ul{
+      padding-inline-start: 0px;
+
+}
+li a{
+  padding: 1.4rem;
+  text-decoration: none;
+  color: var(--welcome);
+ 
+}
+li a:hover{
+  color: #eee;
+  background-color:  var(--welcome)
+}
+#welcome-section{
+background-color: var(--welcome);
+padding: 2rem;
+
+}
+
+#wrapper{
+ height: 11vh;
+}
+h1{
+  margin-top: 0;
+  text-shadow: 1px 1px 1px #000000;
+}
+.web-dev{
+  color:  var(--lavendar);
+  text-shadow: 1px 1px 4px navy;
+}
+.web-dev-text{
+  font-size: 1.6rem;
+}
+#about{
+  text-align: center;
+}
+#welcome-section li{
+  display: list-item;
+}
+
+#about-text{
+  padding-left: 145px;
+   padding-right: 145px;
+   opacity: 0;
+animation: fadeIn 1.1s forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+#projects{
+  padding: 0.5rem;
+  background-color: var(--project);
+  text-align: center;
+  
+}
+#project-header{
+  border-bottom: 2px solid ;
+  max-width: 580px;
+    margin: 0 auto 1.2rem auto;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+#projects-grid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+   
+}
+.projects-space{
+ margin:0px 10px 5px;
+ transition: transform 0.3s, box-shadow 0.3s;
+}
+.projects-space:hover {
+  transform: scale(1.01);
+}
+img{
+  width: 500px;
+  padding: 20px 0 0 0;
+}
+.project-tile{
+   transition: transform 0.3s, box-shadow 0.3s;
+ width: 500px;
+ height: 50px;
+ background-color: var(--welcome);
+ margin-top: 0px;
+ color: white;
+ text-align: center;
+ padding-top: 6px;
+}
+.project-tile:hover {
+  transform: scale(1.04);
+ 
+}
+#third-title-small{
+  display: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.code{
+  font-size: larger;
+  color: var(--welcome);
+}
+.projects-space:hover .code{
+  color: orange;
+}
+#fourth-img{
+height: 501;
+}
+button{
+ background-color: var(--welcome);
+ color: white;
+ padding: 0.7rem 1.6rem;
+ font-size: 1.2rem;
+ border: none;
+ font-weight: 500;
+ border-radius: 5px;
+ margin: 1.5rem 0px ;
+}
+button:hover{
+  background-color:  var(--lavendar);
+  color: black;
+  transition: background 0.4s ease-out;
+  transform: scale(1.07);
+}
+#contact{
+  background-color: var(--welcome);
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  
+}
+#contact h2{
+  padding: 0px;
+  margin: 0px;
+}
+footer {
+  background-color: var(--welcome);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+#footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer-content p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+#icons, #footer-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+#icons a, #footer-icons a {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease-in-out;
+}
+
+#icons a:hover, #footer-icons a:hover {
+  color: var(--lavendar);
+  transform: scale(1.1)
+}
+
+.icon-btn {
+  padding: 0 10px;
+  margin: 5px 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  
+  img{
+  width: 280px;
+  padding: 20px 0 0 0;
+   
+}
+#fourth-img{
+height: 280px;
+}
+.project-tile{
+ width: 280px;
+ font-size: 1.3rem
+}
+#third-title-large{
+  display: none;
+}
+#third-title-small{
+  display: block;
+}
+#about-text{  
+   padding: 1rem;
+}
+li a{
+  padding: 1.2rem;
+}
+body{
+   font-size: 1.1rem;
+}
+#wrapper{
+ height: 9vh;
+}
+#welcome-section{
+background-color: var(--welcome);
+padding: 1rem;
+
+}
+button{
+ padding: 0.5rem 1.2rem;
+ font-size: 1.1rem;
+}
+#contact{
+  height: 40vh;
+}
+}
