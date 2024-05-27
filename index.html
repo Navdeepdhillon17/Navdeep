@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://kit.fontawesome.com/67508cfb2f.js" crossorigin="anonymous"></script>
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="wrapper"></div>
+  <!-- Correctly place the id="about" on the section element -->
+  <section  id="welcome-section">
+    <span id="about">
+      <h1 >Hey, I'm <span class="web-dev">Nav</span></h1>
+      <p class="web-dev web-dev-text">A Web Developer</p>
+    </span>
+    <div>
+      <ul id="about-text">
+        <li>I'm an aspiring web developer with a strong passion for building beautiful and functional websites.</li>
+        <br>
+        <li>I'm constantly expanding my skillset by taking online courses, working on personal projects, and participating in coding challenges.</li>
+      </ul>
+    </div>
+  </section>
+  <!-- Correctly place the id="projects" on the section element -->
+  <section id="projects">
+    <div id="project-header"><h3>Have a look at some of my recent projects</h3></div>
+    <div id="projects-grid">
+      <div class="projects-space">
+        <a href="https://navdeepdhillon17.github.io/feedback-form/">
+          <img src="https://github.com/Navdeepdhillon17/portfolio/blob/main/feedback-form.jpg?raw=true" target="_blank">
+          <p class="project-tile">
+            <span class="code"><</span>
+            Feedback-form
+            <span class="code">/></span>
+          </p>
+        </a>
+      </div>
+      <div class="projects-space">
+        <a href="https://github.com/Navdeepdhillon17/portfolio/blob/main/tribute-page.png?raw=true">
+          <img src="https://github.com/Navdeepdhillon17/portfolio/blob/main/tribute-page.png?raw=true" target="_blank">
+          <p class="project-tile">
+            <span class="code"><</span>
+            Tribute Page
+            <span class="code">/></span>
+          </p>
+        </a>
+      </div>
+      <div class="projects-space">
+        <a href="https://github.com/Navdeepdhillon17/portfolio/blob/main/technical-doc.png?raw=true">
+          <img src="https://github.com/Navdeepdhillon17/portfolio/blob/main/technical-docs.png?raw=true" target="_blank">
+          <p class="project-tile">
+            <span id="third-title-large">
+              <span class="code"><</span>
+              Technical Documentation Page
+              <span class="code">/></span>
+            </span>
+            <span id="third-title-small">
+              <span class="code"><</span>
+              Technical Docs
+              <span class="code">/></span>
+            </span>
+          </p>
+        </a>
+      </div>
+      <div class="projects-space">
+        <a href="https://github.com/Navdeepdhillon17/portfolio/blob/main/technical-doc.png?raw=true">
+          <img id="fourth-img" src="https://github.com/Navdeepdhillon17/portfolio/blob/main/product-landing-page.png?raw=true" target="_blank">
+          <p class="project-tile">
+            <span class="code"><</span>
+            Product landing page
+            <span class="code">/></span>
+          </p>
+        </a>
+      </div>
+    </div>
+    <a href="https://github.com/Navdeepdhillon17" target="_blank"><button>Show More ></button></a>
+  </section>
+ <section id="contact">
+  <h2>Let's connect!</h2>
+  <p>Say hello to me here....</p>
+  <div id="icons">
+    <a href="https://www.instagram.com/navdeep_dhilon_/" target="_blank" class="icon-btn"><i class="fa-brands fa-instagram"></i> Insta</a>
+    <a href="https://github.com/Navdeepdhillon17" target="_blank" class="icon-btn" id="profile-link"><i class="fa-brands fa-github"></i> Github</a>
+    <a href="mailto:your-navidhillon2019@example.com" target="_blank" class="icon-btn"><i class="fa-solid fa-at"></i> Email</a>
+    <a href="https://www.linkedin.com/in/navdeep-kaur-b70943277/" target="_blank" class="icon-btn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+  </div>
+</section>
+<footer>
+  <div id="footer-content">
+    <p>&copy; <span id="date"></span> Navdeep Kaur</p>
+  </div>
+</footer>
+<script>
+  const dateElement = document.getElementById("date");
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  const today = new Date().toLocaleDateString(undefined, options);
+  dateElement.textContent = today;
+</script>
+
+
+</body>
+</html>
